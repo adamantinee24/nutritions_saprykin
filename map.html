@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Location</title>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./main.css">
+  
+</head>
+<body>
+  <div class="wrapper">
+    <div class="map__page">
+    <aside class="sidebar sidebar--opened">
+        <a href="#" class="sidebar__hamburger">
+          <img src=".\image\menu.png" alt="" class="sidebar__hamburger">
+        </a>
+        <div class="sidebar__header">
+          <a href="#" class="logo">
+            <img src=".\image\logo-main.png" alt="" class="logo__image">
+          </a>
+            <a href="#" class="sidebar__close">
+              <img src=".\image\close.png" alt="" class="sidebar__close-icon">
+            </a>
+        </div>
+        <nav class="side-menu sidebar__menu">
+          <ul class="side-menu__list">
+            <li class="side-menu__item">
+              <a href="protein.html" class="side-menu__link">Протеїни</a>
+            </li>
+            <li class="side-menu__item">
+              <a href="gainer.html" class="side-menu__link">Гейнери</a>
+            </li>
+            <li class="side-menu__item">
+              <a href="amino.html" class="side-menu__link">Амінокислоти</a>
+            </li>
+            <li class="side-menu__item">
+              <a href="fat_burner.html" class="side-menu__link">Жироспалювачі</a>
+            </li>
+            <li class="side-menu__item">
+              <a href="creatine.html" class="side-menu__link">Креатин</a>
+            </li>
+            <li class="side-menu__item">
+              <a href="carnitine.html" class="side-menu__link">Карнитин</a>
+            </li>
+             <li class="side-menu__item">
+              <a href="index.html" class="side-menu__link">Головна сторінка</a>
+            </li>
+            <li class="side-menu__item">
+              <a href="map.html" class="side-menu__link">Як нас знайти?</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+     <div id="map">
+          <script>
+          function initMap() {
+            var uluru = {lat: 49.8349675, lng: 24.0113098};
+            var map = new google.maps.Map(
+                document.getElementById('map'), {zoom: 10, center: uluru});
+            var marker = new google.maps.Marker({position: uluru, map: map});
+          }
+              </script>
+              <script async defer
+              src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+              </script>
+            <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtOVR7s3SPcW0B8sedip0uyD0I4c2lhqg&callback=initMap">
+          </script>
+      </div>
+    </div>
+    </div>
+
+</body>
+</html>
